@@ -2,7 +2,7 @@
     session_start();
     
     if($_POST['author'] == $_SESSION['userid']) {
-        $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+        $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
         $sql = "DELETE FROM board
                 WHERE id = '{$_POST['id']}'";
         $result = mysqli_query($conn, $sql);

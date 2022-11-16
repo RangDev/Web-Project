@@ -2,7 +2,7 @@
     session_start();
 
     if($_POST['author'] == $_SESSION['userid']) {
-        $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+        $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
         $sql = "UPDATE board SET
                 title = '{$_POST['title']}',
                 content = '{$_POST['content']}'

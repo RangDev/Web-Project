@@ -1,6 +1,6 @@
 <?php
     if($_POST['upw'] == $_POST['re_upw']){
-        $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+        $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
         $sql = "INSERT INTO account (login_id, login_pw, created) 
                 VALUES(
                     '{$_POST['uid']}',

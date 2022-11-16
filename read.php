@@ -13,7 +13,7 @@
 		<h1>Just Bulletin Board</h1>
     <?php
         if(isset($_GET['number']) == true && !($_GET['number'] == NULL)) {
-            $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+            $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
             $sql = "SELECT * FROM board WHERE id={$_GET['number']}";
             $result = mysqli_query($conn, $sql);
             $row = mysqli_fetch_assoc($result);

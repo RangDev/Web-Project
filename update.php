@@ -2,7 +2,7 @@
 
 <?php
 	session_start();
-    $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+    $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
     $sql = "SELECT * FROM board WHERE id={$_GET['number']}";
     $result = mysqli_query($conn, $sql);
     $row = mysqli_fetch_assoc($result);

@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+    $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
     $sql = "INSERT INTO board (title, content, created, author) 
             VALUES(
                 '{$_POST['title']}',

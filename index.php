@@ -20,7 +20,7 @@
 			<h3>글 목록</h3>
 			<button type="button" onclick="location.href='./create.php'">글 쓰기</button>
 		<?php
-			$conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+			$conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
 			$sql = "SELECT * FROM board order by created desc";
 			$result = mysqli_query($conn, $sql);
 			$number = 1;

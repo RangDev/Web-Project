@@ -5,7 +5,7 @@
         $userid = $_POST['uid'];
         $userpw = $_POST['upw'];
 
-        $conn = mysqli_connect('localhost', 'root', '123', 'JBB_DB');
+        $conn = mysqli_connect('localhost', 'test', 'qwe123', 'JBB_DB');
         $sql="SELECT * FROM account where login_id='$userid'&&login_pw='$userpw'";
         $result = mysqli_fetch_array(mysqli_query($conn,$sql));
         if($result == true){
